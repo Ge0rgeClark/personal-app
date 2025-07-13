@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+   <div class="sidebar" id="sidebar">
+  <button id="toggle-btn">☰</button>
+  <button onclick="navigate('home')">🏠<span class="label">Home</span></button>
+  <button onclick="navigate('topic1')">📚<span class="label">Topic 1</span></button>
+  <button onclick="navigate('topic2')">🧪<span class="label">Topic 2</span></button>
+</div>
+    <div class="content">
+      <div id="home" class="view active">
+        <h1>🏠 Home</h1>
+        <p>Welcome to the Electron app!</p>
+      </div>
+      <div id="topic1" class="view">
+        <h1>📚 Topic 1</h1>
+        <p>This is Topic 1 content.</p>
+      </div>
+      <div id="topic2" class="view">
+        <h1>🧪 Topic 2</h1>
+        <p>This is Topic 2 content.</p>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
