@@ -1,11 +1,17 @@
 {
-  "name": "my-personal-app",
+  "name": "personal-app",
   "version": "1.0.0",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "build": {
+    "appId": "com.George.personalapp",
+    "productName": "Personal App",
+    "win": {
+      "icon": "icons/icon.ico",
+      "target": "nsis"
+    }
   },
-  "devDependencies": {
-    "electron": "^29.3.0"
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
   }
 }
